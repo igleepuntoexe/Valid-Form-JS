@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <fieldset> <h2>Test JavaScript Form Validation</h2>
+        <form id="form" action="https://google.com" method="post">
+            <div>
+                <label id="nam"> Name:</label>
+                <input type="text" name="names" id="nam2" size="30" maxlength="100" required/>
+            </div>
+            <div>
+                <label id="add"> Addres:</label>
+                <input type="text" name="add" size="30" maxlength="100" required/>
+            </div>
+            <div>
+                <label id="zipC"> ZipCode:</label>
+                <input type="text" name="zipC" size="30" maxlength="100" required/>
+            </div>
+            <div>
+                <label id="count"> Country: </label>
+                <select name="country" required>
+                    <option value="" disabled selected>Please Select...</option>
+                    <option value="spain">Spain</option>
+                    <option value="german">Germany</option>
+                    <option value="england">England</option>
+                    <option value="japan">Japan</option>
+                    <option value="argentina">Argentina</option>
+                </select>
+            </div>
+            <div>
+                <label id="gen">Gender:</label>
+                <input type="radio" id="men" name="gen" checked required>
+                <label for="men">Male</label>
+                <input type="radio" id="fem" name="gen" required>
+                <label for="fem">Female</label>
+            </div>
+            <div>
+                <label id="pref">Preferences: </label>
+                <input type="checkbox" name="check" id="red" required>
+                <label id="Red">Red</label>
+                <input type="checkbox" name="check" id="green" required>
+                <label id="Green">Green</label>
+                <input type="checkbox" name="check" id="blue" required>
+                <label id="Blue">Blue</label>
+            </div>
+            <div>
+                <label id="tel">Phone:</label>
+                <input type="tel" name="tel" size="30" maxlength="100" required/>
+            </div>
+            <div>
+                <label id="em">Email:</label>
+                <input type="email" name="em" size="30" maxlength="100" required/>
+            </div>
+            <div>
+                <label id="pass">Password(6-8 characterres):</label>
+                <input type="password" name="pass" size="30" maxlength="100" required/>
+            </div>
+            <div>
+                <label id="passv">Verify Password:</label>
+                <input type="password" name="passv" size="30" maxlength="100" required/>
+            </div>
+            <button type="submit">SEND</button>
+            <button type="reset">CLEAR</button>
+        </form>
+    </fieldset>
+</body>
+</html>

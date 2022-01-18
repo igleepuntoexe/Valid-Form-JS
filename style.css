@@ -1,0 +1,34 @@
+body{
+    display: inline-block;
+    width: 99vw;
+    text-align: center;
+}
+
+div{
+    padding: 10px;
+}
+
+fieldset > h2{
+    padding: 20px;
+}
+
+fieldset  input{
+    padding-left: 20px;
+}
+
+fieldset  label{
+    margin-right: 50px;
+    padding-left: 10px;
+}
+
+#country{
+    padding-left: 150px;
+}
+
+fieldset select{
+    margin-right: 280px;
+}
+
+#pref{
+    padding-left: 130px;
+}
