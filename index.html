@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
-    <title>Document</title>
+    <title>FORM</title>
 </head>
 <body>
     <fieldset> <h2>Test JavaScript Form Validation</h2>
         <form id="form" action="https://google.com" method="post">
             <div>
-                <label id="nam"> Name:</label>
+                <label id="nam"> Name<span></span>:</label>
                 <input type="text" name="names" id="nam2" size="30" maxlength="100" required/>
+                <span id="spanX"></span>
             </div>
             <div>
-                <label id="add"> Addres:</label>
-                <input type="text" name="add" size="30" maxlength="100" required/>
+                <label id="add"> Addres<span id="spanAdd"></span>:</label> 
+                <input type="text" name="add" id="add2" size="30" maxlength="100" required/>
+                <span id="spanAddres"></span>
             </div>
-            <div>
-                <label id="zipC"> ZipCode:</label>
-                <input type="text" name="zipC" size="30" maxlength="100" required/>
+            <div> 
+                <label id="zipC"> ZipCode<span id="spanZip"></span>:</label>
+                <input type="number" id="zipC2" name="zipC" required/>
+                <span id="spanZipCode"></span>
             </div>
             <div>
                 <label id="count"> Country: </label>
@@ -41,7 +44,7 @@
                 <input type="radio" id="fem" name="gen" required>
                 <label for="fem">Female</label>
             </div>
-            <div>
+            <div id="pref">
                 <label id="pref">Preferences: </label>
                 <input type="checkbox" name="check" id="red" required>
                 <label id="Red">Red</label>
@@ -49,22 +52,27 @@
                 <label id="Green">Green</label>
                 <input type="checkbox" name="check" id="blue" required>
                 <label id="Blue">Blue</label>
+                <span id="spanX"></span>
             </div>
             <div>
-                <label id="tel">Phone:</label>
-                <input type="tel" name="tel" size="30" maxlength="100" required/>
+                <label id="tel">Phone<span id="spanPho"></span>:</label>
+                <input type="tel" name="tel" id="tel2" size="30" maxlength="100" required/>
+                <span id="spanPhone"></span>
             </div>
             <div>
                 <label id="em">Email:</label>
-                <input type="email" name="em" size="30" maxlength="100" required/>
+                <input type="email" name="em" size="30" maxlength="100" onclick="" required/>
+                <span id="spanX"></span>
             </div>
             <div>
-                <label id="pass">Password(6-8 characterres):</label>
-                <input type="password" name="pass" size="30" maxlength="100" required/>
+                <label id="pass">Password(6-8 characterres) <span id="SpanPass">:</span></label>
+                <input type="password" name="pass" id="pass2" size="30" maxlength="100" required/>
+                <span id="SpanPassword"></span>
             </div>
             <div>
-                <label id="passv">Verify Password:</label>
-                <input type="password" name="passv" size="30" maxlength="100" required/>
+                <label id="passv">Verify Password <span id="SpanPassV">:</span></label>
+                <input type="password" name="passv" id="passv2" size="30" maxlength="100" required/>
+                <span id="SpanPassVerify"></span>
             </div>
             <button type="submit">SEND</button>
             <button type="reset">CLEAR</button>
